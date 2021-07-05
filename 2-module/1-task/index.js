@@ -3,7 +3,7 @@ function sumSalary(salaries) {
 
   for (prop in salaries) {
     if (typeof salaries[prop] === 'number') {
-      if ( !isNaN(salaries[prop]) && isFinite(salaries[prop]) ) {
+      if ( isFinite(salaries[prop]) ) {
         sum += salaries[prop];
       }
     }
