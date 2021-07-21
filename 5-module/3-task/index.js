@@ -27,7 +27,7 @@ function initCarousel() {
   });
 
   function updateSlider(currentSlide) {
-    carouselInner.style.transform = `translateX(${-[...carouselSlides][currentSlide].offsetWidth * currentSlide}px)`;
+    carouselInner.style.transform = `translateX(${-carouselInner.offsetWidth * currentSlide}px)`;
     currentSlide == carouselSlides.length - 1 ? carouselArrowRight.style.display = 'none' : carouselArrowRight.style.display = '';
     currentSlide == 0 ? carouselArrowLeft.style.display = 'none' : carouselArrowLeft.style.display = '';
   }
