@@ -63,6 +63,7 @@ describe('6-module-2-task', () => {
 
       document.body.addEventListener(productAddEventName, (event) => {
         productAddEvent = event;
+        console.log(productAddEvent);
       }, { once: true });
 
       let addButton = sut.elem.querySelector('.card__button');
